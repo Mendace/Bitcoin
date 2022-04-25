@@ -122,51 +122,103 @@
     </div> 
     
     <main>
-        <section id="io">
-            <div class="container"><hr /></div>
-            <header><h1 class="terminal-prompt" style="color: chartreuse;">perchè questa raccolta?</h1></header>
-            <div class="container">
-                <p>Era necessaria una nuova raccolta che raccogliesse più informazioni possibili su Bitcoin? Probabilmente no, ma era da molto tempo che volevo farlo e finalmente sono riuscito a trovare il tempo. Quindi questa sarà la MIA raccolta personale che condividerò con tutti e chiunque potrà contribuire a renderla migliore.</p>
-            </br>
-                <h2 id="project-goals">Progetto</h2>
-                    <p>questa repository è stata sviluppata con 
-                        <ul>
-                            <li><a href="https://pages.github.com//"><h2 id="markdown-terminal-css">GitHub Pages</h2></a></li>
-                            <li><a href="https://terminalcss.xyz/dark/"><h2 id="markdown-terminal-css">Terminal CSS</h2></a></li>
-                            <li><a href="https://code.visualstudio.com/"><h2 id="markdown-terminal-css">Visual Code</h2></a></li>
-                        </ul>
-                    </p>
-                    <section>
-                      <header><h2 id="Cards"></h2></header>
-                      <div class="terminal-card">
-                        <header>Sostieni la repository</header>
-                        <div>
-                          Se vuoi sostenere il mio lavoro o semplicemente ti piace il contenuto di questa repository allora puoi donarmi qualche Satoshi a questo indirizzo BTC on-chain.
-                          <br />
-                        <a href="bitcoin:bc1q7cdrq6tngc2m37695f68w8rzck25j7va4r4rhe">bc1q7cdrq6tngc2m37695f68w8rzck25j7va4r4rhe</a>
-                        </div>
-                      </div>
-                      <br />
-                    </section>
-            </div>
-        </section>
+      <section>
+        <header></header>
+        <figure>
+          <img
+            src="assets/bitcoin.png"
+            alt="Image with caption"
+            title="Image with caption"
+            style="display: block; margin-left: auto; margin-right: auto; width: 20%;"
+          />
+          <figcaption>Bitcoin</figcaption>
+        </figure>
+      </section>
+      
         <div class="container"><hr /></div>
         <section>
-            <header><h1 class="terminal-prompt" style="color: chartreuse;">risorse</h1></header>
+            <header><h1 class="terminal-prompt" style="color: chartreuse;">indice</h1></header>
             <div class="container">
             </dl>
-            <p><strong>Ecco alcune risorse in italiano</strong> che potete leggere, ascoltare o guardare.</p>
+            <p>Questa è una piccola guida di risorse raccolte dalla rete e in parte scritta da me.</p>
             <p class="terminal-prompt" id="risorse">Piccoli passi con <em>Bitcoin.</em></p>
             <ol class="terminal-toc">
-              <li><a href="#">Introduzione a Bitcoin.</a></li>
-              <li><a href="#">Perchè usare Bitcoin.</a></li>
-               <li><a href="#">Satoshi Nakamoto.</a></li>
-               <li><a href="#">Blockchain.</a></li>
+              <li><a href="#introduzione">Introduzione a Bitcoin.</a></li>
+              <li><a href="#uso">Perchè usare Bitcoin.</a></li>
+               <li><a href="#satoshi">Satoshi Nakamoto.</a></li>
+               <li><a href="#blockchain">Blockchain.</a></li>
               <li><a href="#">Cos'è un wallet.</a></li>
               <li><a href="#">Nodo Bitcoin.</a></li>
               <li><a href="#">CoinJoin.</a></li>
             </ol>
           </dl>
+          <hr />
+          <p class="terminal-prompt" id="introduzione">Introduzione a <em>Bitcoin.</em></p>
+            <p style="display: inline-block;">Il Bitcoin (simbolo: <p style="color: #fc6602; display: inline;">₿</p>, codice: BTC) è una criptovaluta e un sistema di pagamento 
+            valutario internazionale creato nel 2009 da un anonimo inventore (o gruppo di inventori), noto con lo pseudonimo di Satoshi Nakamoto, che fu il primo ad intuire che una tecnologia come la Blockchain è perfetta per sviluppare una moneta decentralizzata, 
+            non controllata dalle banche centrali.
+            Prima di iniziare a parlare di Bitcoin è necessario avere chiaro come funziona il sistema finanza tradizionale.
+        <br>
+        <br>
+        Inizialmente, fino a circa 100 anni fa, il valore della moneta come l’euro o il dollaro era determinato da un bene fisico, come l’oro. In sostanza la moneta che la banca possedeva o stampava era direttamente proporzionale alle riserve d’oro che possedeva, la banca deteneva per noi l’oro e noi in cambio ricevevamo la moneta. 
+        Questo perché è sicuramente più semplice pagare un caffè con un euro piuttosto che con un pezzettino d’oro.
+          <br>
+          <br>
+        Questo equilibrio è stato travolto ad un certo punto, perché le banche avevano la necessità di stampare più denaro di quello che si potevano permettere, guardando alle riserve d’oro che possedevano.
+        Per poterlo fare, insieme ai governi centrali si sono dati delle regole e da quel giorno hanno iniziato a stampare moneta, assicurandoci che il sistema avrebbe retto, e che l’inflazione che si verrebbe a creare la terranno controllata.
+        <br>
+        <br><strong>Siamo quindi passati dall’avere la fiducia in qualcosa, che in questo caso era la certezza che i soldi che possedevamo rappresentava quella determinata quantità d’oro, all’avere fiducia in qualcuno, cioè avere fiducia che il dollaro vale un dollaro, perché me lo dice il Governo o la Banca.</strong>
+        <br>Si può dunque riassumere in poche linee che la moneta FIAT è una bugia con queste caratteristiche <p style="color: chartreuse; display: inline;">centralizzata e illimitata</p>.
+        <br>
+        <br>
+        <p class="terminal-prompt">La svolta con Bitcoin.</p>
+        Con la nascita di Bitcoin siamo di fronte per la prima volta nella storia, alla possibilità di poter eliminare la banca e i governi centrali. Questo intermediario in cui abbiamo tanta fiducia e che non sempre è affidabile quanto crediamo.
+        <br>
+        <br>
+        Il Bitcoin infatti a differenza del denaro tradizionale non registra le nostre transazioni ed i nostri movimenti su un registro centrale come quello di una banca, ma registra tutto su un archivio pubblico, la Blockchain.
+        <br>
+        <br>
+        La differenza con il denaro tradizionale sta nel fatto che tutti possiamo verificare le transazioni contenute in questo archivio pubblico, quello che non possiamo verificare è chi sono gli intermediari che eseguono i movimenti.
+        </p>
+        <hr />
+        <p class="terminal-prompt" id="uso">Perchè usare bitcoin?.</p>
+        <p style="display: inline-block;">Molti sono i punti positivi nell'utilizzare bitcoin, ad esempio si può sicuramente dire che non ci sono limiti di utilizzo in qualsiasi termine. Con bitcoin puoi inviare pagamenti ovunque nel mondo <strong>"serve solo un indirizzo".</strong>
+        <br>
+        <br>
+        Questo indirizzo (address) è generalmente anonimo se non viene collegato a nessuno KYC (verifica di identità) e quindi mantiene sicura la tua privacy se usato con la testa. 
+        Non ci sono limiti di quantità, puoi inviare un pagamento di qualsiasi importo anche cifre esorbitanti senza nessuna autorità che chieda il motivo o che censuri l'invio, ovviamente non esistono limiti imposti dal calendario che sia un giorno feriale o festivo o limiti di ore anche nel cuore della notte puoi inviare BTC.
+        <br>
+        <br>
+        I costi di transazione sono molto bassi anche se può sembrare strano perchè le fee per importi piccoli saranno onerosi, se paragonate alla finanza tradizionale per importi superiori le commissioni sono le più basse in circolazione. 
+        <br>Le transazioni Bitcoin sono sicure, irreversibili e non contengono dati sensibili o informazioni personali del cliente. Ciò protegge i commercianti da perdite causate da frodi o da chargeback fraudolenti.
+        <br>
+        <br>
+        La generazione di nuovi bitcoin è basata su un algoritmo complesso, progettato per far sì che non ve ne siano mai oltre 21 milioni in circolazione. Questo anche se frazionabile in satoshi rende bitcoin estramente scarso in termini di rarità e inflazionabile fino allo zero una volta emessi tutti i bitcoin minabili.
+        </p>
+        <hr />
+        <p class="terminal-prompt" id="satoshi">Satoshi Nakamoto.</p>
+        <p style="display: inline-block;">Una delle domande più assidue nelle community di bitcoiner è chi sia Satoshi Nakamoto sebbene non si sappia se sia un solo individuo o un gruppo di persone con più facoltà, è' certo che chiunque sia ci abbia lasciato un dono straordinario chiamato appunto Bitcoin.</p>
+        <br>Di Satoshi Nakamoto si sa ben poco nel 2008 pubblicò il protocollo Bitcoin su The Cryptography Mailing list sul sito metzdowd.com. Nel 2009 ha distribuito la prima versione del software client[3][4] e successivamente ha contribuito al progetto in via anonima insieme ad altri sviluppatori, per ritirarsi dalla comunità di Bitcoin nel 2010. L'ultimo contatto da parte di Satoshi Nakamoto è stato nel 2011, quando dichiarò di essere passato ad altri progetti e di aver lasciato il Bitcoin in buone mani con Gavin Andresen.
+        <hr />
+        <p class="terminal-prompt" id="blockchain">Blockchain.</p>
+        <p style="display: inline-block;">Bitcoin è distribuito, immutabile, trasparente. Queste tre parole devono essere un mantra per coloro che si avvicinano a questa tecnologia per la prima volta, ma cerchiamo di fare un pò di ordine.
+        <br>
+        <br>
+        Cominciamo col dire che bitcoin è una coin o moneta che gira sulla blockchain. quest'ultima appunto si avvale di queste tre proprietà ovvero: bitcoin è distribuito in quanto le informazioni vengono registrate su nodi decentralizzati garantendo una sicurezza informatica e resilienza dei sistemi. 
+        <br>
+        Trasparente perchè il contenuto del registro è visibile a tutti ed è facilmente consultabile e verificabile.
+        <br>
+        Immutabile perchè una volta scritti sul registro, i dati non possono essere modificati senza il consenso della rete.
+        <br><br>Ma cosa è la Blockchain?
+        <br><br>Riporto direttamente da <strong>wikipedia:</strong> La blockchain (letteralmente "catena di blocchi") è una struttura dati condivisa e "immutabile". È definita come un registro digitale le cui voci sono raggruppate in "blocchi", concatenati in ordine cronologico, e la cui integrità è garantita dall'uso della crittografia. Sebbene la sua dimensione sia destinata a crescere nel tempo, è immutabile nel concetto di "quanto". Il suo contenuto una volta scritto tramite un processo normato, non è più né modificabile né eliminabile, a meno di non invalidare l'intero processo.
+        <br>
+        Una blockchain è un registro digitale aperto e distribuito, in grado di memorizzare record di dati (solitamente, denominati "transazioni") in modo sicuro, verificabile e permanente. Una volta scritti, i dati in un blocco non possono essere retroattivamente alterati 
+        senza che vengano modificati tutti i blocchi successivi ad esso e ciò, per la natura del protocollo e dello schema di validazione, necessiterebbe del consenso della maggioranza della rete. 
+        <br>La blockchain è quindi rappresentabile come una lista, in continua crescita, di "blocchi" collegati tra loro e resi sicuri mediante l'uso della crittografia. 
+        Ad un blocco possono essere associate una o più transazioni e ogni blocco, inoltre, contiene un puntatore hash al blocco precedente e una marca temporale.
+        <br>Per ulteriori approfondimenti sulla Blockchain vi lascio il link a <a href="https://it.wikipedia.org/wiki/Blockchain">Wikipedia</a>.
+        </p>
+
           <hr />
           <p class="terminal-prompt" id="lightning">Introduzione a <em>lightning network.</em></p>
           <ol class="terminal-toc">
