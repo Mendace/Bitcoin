@@ -4,8 +4,26 @@
     justify-content: center;
 }
 
+.banner-container-light{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .banner-container .banner{
     background:linear-gradient(-55deg, #535353 29%, #474747 29.1%, #474747 68%, #535353 68.1%);
+    border-radius: 5px;
+    margin:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 5px 10px #0005;
+    overflow: hidden;
+}
+
+.banner-container-light .bannerlight{
+    background:linear-gradient(-55deg, #ddcdcd 29%, #f0eeee 29.1%, #f0eeee 68%, #ddcdcd 68.1%);
     border-radius: 5px;
     margin:10px;
     display: flex;
@@ -22,11 +40,28 @@
     text-align: center;
 }
 
+.banner-container-light .bannerlight .object{
+    flex:1 1 250px;
+    padding:15px;
+    text-align: center;
+}
+
 .banner-container .banner .object img{
     width:80%;
 }
 
+.banner-container-light .bannerlight .object img{
+    width:80%;
+}
+
 .banner-container .banner .content{
+    flex:1 1 250px;
+    text-align: center;
+    padding:10px;
+    text-transform: uppercase;
+}
+
+.banner-container-light .bannerlight .contentlg{
     flex:1 1 250px;
     text-align: center;
     padding:10px;
@@ -38,18 +73,34 @@
     font-size: 25px;
 }
 
+.banner-container-light .bannerlight .contentlg span{
+    color:#eee;
+    font-size: 25px;
+}
+
 .banner-container .banner .content h3{
     color:#fff;
     font-size: 40px;
 }
 
-.banner-container .banner .content p{
+.banner-container-light .bannerlight .contentlg h3{
+    color:#fff;
+    font-size: 40px;
+}
+
+.banner-container .banner .contentlg p{
     color:#eee;
     font-size: 20px;
     padding:10px 0;
 }
 
-.banner-container .banner .content .btn{
+.banner-container-light .bannerlight .contentlg p{
+    color:#eee;
+    font-size: 20px;
+    padding:10px 0;
+}
+
+.banner-container .banner .contentlg .btn{
     display: block;
     height:40px;
     width:150px;
@@ -60,7 +111,27 @@
     text-decoration: none;
 }
 
+
+.banner-container-light .bannerlight .contentlg .btn{
+    display: block;
+    height:40px;
+    width:150px;
+    line-height: 40px;
+    background: #fff;
+    color:#000000;
+    margin:5px auto;
+    text-decoration: none;
+}
+
+
 .banner-container .banner .women{
+    position: relative;
+    bottom: -33px;
+    padding:10px;
+    flex:1 1 250px;
+}
+
+.banner-container-light .bannerlight .women{
     position: relative;
     bottom: -33px;
     padding:10px;
@@ -71,8 +142,18 @@
     width:50%;
 }
 
+.banner-container-light .bannerlight .women img{
+    width:50%;
+}
+
 @media (max-width:768px){
     .banner-container .banner .women{
+        display: none;
+    }
+}
+
+@media (max-width:768px){
+    .banner-container-light .bannerlight .women{
         display: none;
     }
 }
