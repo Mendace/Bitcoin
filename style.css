@@ -40,7 +40,7 @@
     text-align: center;
 }
 
-.banner-container-light .bannerlight .object{
+.banner-container-light .bannerlight .objectlg{
     flex:1 1 250px;
     padding:15px;
     text-align: center;
@@ -50,7 +50,7 @@
     width:80%;
 }
 
-.banner-container-light .bannerlight .object img{
+.banner-container-light .bannerlight .objectlg img{
     width:80%;
 }
 
@@ -69,38 +69,38 @@
 }
 
 .banner-container .banner .content span{
-    color:#eee;
+    color:rgb(129, 127, 127);
     font-size: 25px;
 }
 
 .banner-container-light .bannerlight .contentlg span{
-    color:#eee;
+    color:rgb(129, 127, 127);
     font-size: 25px;
 }
 
 .banner-container .banner .content h3{
-    color:#fff;
+    color:rgb(129, 127, 127);
     font-size: 40px;
 }
 
 .banner-container-light .bannerlight .contentlg h3{
-    color:#fff;
+    color:rgb(129, 127, 127);
     font-size: 40px;
 }
 
 .banner-container .banner .contentlg p{
-    color:#eee;
+    color:rgb(129, 127, 127);
     font-size: 20px;
     padding:10px 0;
 }
 
 .banner-container-light .bannerlight .contentlg p{
-    color:#eee;
+    color:rgb(129, 127, 127);
     font-size: 20px;
     padding:10px 0;
 }
 
-.banner-container .banner .contentlg .btn{
+.banner-container .banner .content .btnd{
     display: block;
     height:40px;
     width:150px;
@@ -112,7 +112,7 @@
 }
 
 
-.banner-container-light .bannerlight .contentlg .btn{
+.banner-container-light .bannerlight .contentlg .btnl{
     display: block;
     height:40px;
     width:150px;
@@ -131,29 +131,29 @@
     flex:1 1 250px;
 }
 
-.banner-container-light .bannerlight .women{
+.banner-container-light .bannerlight .womenlg{
     position: relative;
     bottom: -33px;
     padding:10px;
     flex:1 1 250px;
 }
 
-.banner-container .banner .women img{
+.banner-container .banner .womenlg img{
     width:50%;
 }
 
-.banner-container-light .bannerlight .women img{
+.banner-container-light .bannerlight .womenlg img{
     width:50%;
 }
 
 @media (max-width:768px){
-    .banner-container .banner .women{
+    .banner-container .banner .womenlg{
         display: none;
     }
 }
 
 @media (max-width:768px){
-    .banner-container-light .bannerlight .women{
+    .banner-container-light .bannerlight .womenlg{
         display: none;
     }
 }
