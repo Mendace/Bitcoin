@@ -12,7 +12,7 @@
   <meta name="twitter:image" content="https://raw.githubusercontent.com/Mendace/Bitcoin/main/assets/user.jpg">
   <meta property="twitter:title" content="Presentation page and links about mendace" />
   <title>Mendace | Bitcoin</title>
-  
+
   <script src="https://cdn.counter.dev/script.js" data-id="586b1ec9-8faa-4f5b-a67b-6e104fc85c1c" data-utcoffset="1"></script>
 
   <meta charset="utf-8">
@@ -101,6 +101,21 @@
 
 </head>
 
+<script>
+	! function(c) {
+		var t = document.createElement("script");
+		t.type = "text/javascript", t.async = !0, t.onload = c, t.src = "CryptoDonateButton/src/widget.js";
+		var e = document.getElementsByTagName("script")[0];
+		e.parentNode.insertBefore(t, e)
+	}(function() {
+		Fr.loadCD("bitcoin", {
+			coin: "bitcoin",
+			address: "LNURL1DP68GURN8GHJ7AMPD3KX2AR0VEEKZAR0WD5XJTNRDAKJ7TNHV4KXCTTTDEHHWM30D3H82UNVWQHHX6TCW35XXUN0WQUNG69GDEQ",
+			buttonClass: "green",
+			dialogClass: "green",
+		});
+	});
+</script>
 <body class="terminal">
         <div class="terminal-nav">
         <div class="terminal-logo">
@@ -175,7 +190,11 @@
                     <br>
                     <h2 id="project-goals">Stile</h2>
                     <p>Puoi provare questa repository anche nella versione old terminal.</p>
-                    <button class="btn btn-default" style="margin-left: 50%;"><a href="https://mendace.github.io/Bitcoin/index.html">Old</a></button><br /><br />
+                    <button class="btn btn-default" style="position: relative;
+                    top: 50%;
+                    left: 50%;
+                    margin-top: -100px;
+                    margin-left: -100px;"><a href="https://mendace.github.io/Bitcoin/index.html">Old</a></button><br /><br />
                     <section>
                       <header><h2 id="Cards"></h2></header>
                       <div class="terminal-card">
@@ -183,8 +202,17 @@
                         <div>
                           Se vuoi sostenere il mio lavoro o semplicemente ti piace il contenuto di questa repository allora puoi donarmi qualche Satoshi a questo indirizzo BTC on-chain.
                           <br />
-                        <a href="bitcoin:bc1q7cdrq6tngc2m37695f68w8rzck25j7va4r4rhe">bc1q7cdrq6tngc2m37695f68w8rzck25j7va4r4rhe</a>
+                        <a href="bitcoin:bc1q7cdrq6tngc2m37695f68w8rzck25j7va4r4rhe">bc1q7cdrq6tngc2m37695f68w8rzck25j7va4r4rhe</a><br /><br />
+                        Oppure puoi usare la rete Lightining per transazioni veloci e basse fee.
                         </div>
+                        <br />
+                        <span id="bitcoin" style="position: relative;
+                    top: 50%;
+                    left: 51%;
+                    margin-top: -100px;
+                    margin-left: -100px;"></span>
+                    <br />
+                    <br />
                       </div>
                       <br />
                     </section>
