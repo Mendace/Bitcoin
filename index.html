@@ -28,422 +28,49 @@
   <meta property="og:description" content="Una raccolta opensource di varie fonti su Bitcoin in uno stile minimale e leggero.">
   <meta property="og:image" content="image.png">
 
-  <!-- custom css file link  -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.2/dist/terminal.min.css" />
-  <link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
-
-  
-  <link rel="icon" href="/favicon.ico">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
-  
- 
-  <style>
-    .components-grid {
-      display: grid;
-      grid-column-gap: 1.4em;
-      grid-template-columns: auto;
-      grid-template-rows: auto;
-    }
-
-    .image-grid {
-      display: grid;
-      grid-template-rows: auto;
-      display: grid;
-      grid-gap: 1em;
-      grid-template-rows: auto;
-      grid-template-columns: repeat(
-        auto-fit,
-        minmax(calc(var(--page-width) / 12), 1fr)
-      );
-    }
-
-    @media only screen and (min-width: 70em) {
-      .components-grid {
-        grid-template-columns: 3fr 9fr;
-      }
-    }
-  </style>
- 
- 
- 
- 
- <style>
-
-:root {
-        --global-font-size: 15px;
-        --global-line-height: 1.4em;
-        --global-space: 10px;
-        --font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
-          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
-          serif;
-        --mono-font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
-          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
-          serif;
-        --background-color: #000000;
-        --page-width: 60em;
-        --font-color: #d3d4da;
-        --invert-font-color: #222225;
-        --secondary-color: #a3abba;
-        --tertiary-color: #a3abba;
-        --primary-color: #15ff00;
-        --error-color: #ff3c74;
-        --progress-bar-background: #3f3f44;
-        --progress-bar-fill: #62c4ff;
-        --code-bg-color: #3f3f44;
-        --input-style: solid;
-        --display-h1-decoration: none;
-      }
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=VT323&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="styles.css">
     
-  </style>
+    
+
 
 
 </head>
+<body>
 
-<script>
-	! function(c) {
-		var t = document.createElement("script");
-		t.type = "text/javascript", t.async = !0, t.onload = c, t.src = "CryptoDonateButton/src/widget.js";
-		var e = document.getElementsByTagName("script")[0];
-		e.parentNode.insertBefore(t, e)
-	}(function() {
-		Fr.loadCD("bitcoin", {
-			coin: "bitcoin",
-			address: "LNURL1DP68GURN8GHJ7AMPD3KX2AR0VEEKZAR0WD5XJTNRDAKJ7TNHV4KXCTTTDEHHWM30D3H82UNVWQHHX6TCW35XXUN0WQUNG69GDEQ",
-			buttonClass: "green",
-			dialogClass: "green",
-		});
-	});
-</script>
 
-<body class="terminal">
-        <div class="terminal-nav">
-        <div class="terminal-logo">
-            <div class="logo terminal-prompt">
-                <a href="index.html" class="no-style"><h1 class="rainbow rainbow-text" style="font-size: x-large; color: #fc6602;"> ₿</h1></a>
-            </div>
-        </div> 
-        <nav class="terminal-menu" id="menu">
-            <ul>
-                <li style="color: chartreuse;">
-                    <a href="#io" class="menu-item">io.</a>
-                </li> 
-                <li style="color: chartreuse;">
-                    <a href="#risorse" class="menu-item">Bitcoin.</a>
-                </li> 
-                <li style="color: chartreuse;">
-                    <a href="#lightning" class="menu-item">lightning.</a>
-                </li> 
-                <li style="color: chartreuse;">
-                    <a href="#taproot" class="menu-item">taproot.</a>
-                </li> 
-                <li style="color: chartreuse;">
-                    <a href="#wallet" class="menu-item">wallet.</a>
-                </li> 
-                <li style="color: chartreuse;">
-                    <a href="#acquistare" class="menu-item">acquistare BTC.</a>
-                </li>
-                <li style="color: chartreuse;">
-                    <a href="#extra" class="menu-item">extra.</a>
-                </li>
-            </ul>
-        </nav>
-    </div> 
-    
-    <section>
-      <div class="banner-container">
 
-        <div class="banner">
-            <div class="object">
-                <img src="assets/bitbox.png" alt="">
-            </div>
-            <div class="content">
-                <span>Bitcoin Only edition</span>
-                <h3>Bitbox 02</h3>
-                <p>The best secure hardware wallet</p>
-                <a href="https://shiftcrypto.ch/bitbox02/?ref=REHlrSoi0w" class="btn">more</a>
-            </div>
-            <div class="women">
-                <img src="" alt="">
-            </div>
+<div class="splash-container" id="particles-js">
+    <div class="splash">
+        
+        <a href="main.html"><h1 style="color: chartreuse;" class="splash-head"><span>BITCOIN REPOSITORY</span></h1></a>
+        <p class="splash-subhead">
+            press button
+        </p>
+
+        <div class="footer-basic">
+            <footer class="fade-in-text">
+                <div class="social"><a href="https://mastodon.uno/@Mendace"><i class="fa-brands fa-mastodon"></i></a>
+                  <a href="https://twitter.com/OfficialMendace"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://t.me/bitcointalkIT"><i class="fa-brands fa-telegram"></i></a>
+                  <a href="https://github.com/Mendace/"><i class="fa-brands fa-github"></i></a></div>
+                
+                </footer>
         </div>
-    
+       
     </div>
-    
-    </section>
-    
-    
-    <main>
-        <section id="io">
-            <div class="container"><hr /></div>
-            <header><h1 class="terminal-prompt" style="color: chartreuse;">perchè questa raccolta?</h1></header>
-            <div class="container">
-                <p>Era necessaria una nuova raccolta che raccogliesse più informazioni possibili su Bitcoin? Probabilmente no, ma era da molto tempo che volevo farlo e finalmente sono riuscito a trovare il tempo. Quindi questa sarà la MIA raccolta personale che condividerò con tutti e chiunque potrà contribuire a renderla migliore.</p>
-            </br>
-                <h2 id="project-goals">Progetto</h2>
-                    <p>questa repository è stata sviluppata con 
-                        <ul>
-                            <li><a href="https://pages.github.com//"><h2 id="markdown-terminal-css">GitHub Pages</h2></a></li>
-                            <li><a href="https://terminalcss.xyz/dark/"><h2 id="markdown-terminal-css">Terminal CSS</h2></a></li>
-                            <li><a href="https://code.visualstudio.com/"><h2 id="markdown-terminal-css">Visual Code</h2></a></li>
-                        </ul>
-                    </p>
-                    <br>
-                    <h2 id="project-goals">Stile</h2>
-                    <p>Puoi provare questa repository anche nella versione terminal paper.</p>
-                    <div style="display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;">
-                    <button class="btn btn-default" style="display: flex;
-                    justify-content: center;
-                    align-items: center;"><a href="https://mendace.github.io/Bitcoin/paper.html">Paper</a></button></div>
-                    
-                    <br /><br />
-                    <section>
-                      <header><h2 id="Cards"></h2></header>
-                      <div class="terminal-card">
-                        <header>Sostieni la repository</header>
-                        <div>
-                          Se vuoi sostenere il mio lavoro o semplicemente ti piace il contenuto di questa repository allora puoi donarmi qualche Satoshi a questo indirizzo BTC on-chain.
-                          <br />
-                        <a href="bitcoin:bc1q7cdrq6tngc2m37695f68w8rzck25j7va4r4rhe">bc1q7cdrq6tngc2m37695f68w8rzck25j7va4r4rhe</a><br /><br />
-                        Oppure puoi usare la rete Lightining per transazioni veloci e basse fee.
-                        </div>
-                        <br />
-                        <div class="pure-u-1">
-                        <span id="bitcoin" style="display: flex;
-                        justify-content: center;"></span></div>
-                    <br />
-                    <br />
-                      </div>
-                      <br />
-                      
-                    </section>
-            </div>
-        </section>
-        <div class="container"><hr /></div>
-        <section>
-            <header><h1 class="terminal-prompt" style="color: chartreuse;">risorse</h1></header>
-            <div class="container">
-            </dl>
-            <p><strong>Ecco alcune risorse in italiano</strong> che potete leggere, ascoltare o guardare.</p>
-            <p class="terminal-prompt" id="risorse">Piccoli passi con <em>Bitcoin.</em></p>
-            <ol class="terminal-toc">
-              <li><a href="https://mendace.github.io/Bitcoin/bitcoin.html#introduzione">Introduzione a Bitcoin.</a></li>
-              <li><a href="https://mendace.github.io/Bitcoin/bitcoin.html#uso">Perchè usare Bitcoin.</a></li>
-               <li><a href="https://mendace.github.io/Bitcoin/bitcoin.html#satoshi">Satoshi Nakamoto.</a></li>
-               <li><a href="https://mendace.github.io/Bitcoin/bitcoin.html#blockchain">Blockchain.</a></li>
-              <li><a href="#">Cos'è un wallet.</a></li>
-              <li><a href="#">Nodo Bitcoin.</a></li>
-              <li><a href="#">CoinJoin.</a></li>
-            </ol>
-          </dl>
-          <hr />
-          <p class="terminal-prompt" id="lightning">Introduzione a <em>lightning network.</em></p>
-          <ol class="terminal-toc">
-            <li><a href="#">Cosa è lightning network.</a></li>
-            <li><a href="#">Come funziona.</a></li>
-             <li><a href="#">Cosa sono i canali.</a></li>
-             <li><a href="#">Sicurezza della rete lightning.</a></li>
-            <li><a href="#">Vantaggi e svantaggi.</a></li>
-          </ol>
-          <hr />
-          <p class="terminal-prompt" id="taproot">Aggiornamento a  <em>taproot.</em></p>
-          <ol class="terminal-toc">
-            <li><a href="#">Cosa è taproot.</a></li>
-            <li><a href="#">I limiti della rete Bitcoin.</a></li>
-             <li><a href="#">Come funziona Taproot.</a></li>
-             <li><a href="#">I vantaggi di Taproot per Bitcoin.</a></li>
-          </ol>
-          <br />
-          <hr />
-            </div>
-          <header><h1 class="terminal-prompt" style="color: chartreuse;" id="wallet">wallet</h1></header>
-          <div class="container">
-                    <table>
-                      <div class="terminal-card">
-                        <header> Questi sono alcuni wallet che potete utilizzare per ricevere o inviare bitcoin alcuni sono hardware altri software altri paper.</header>
-                      </div>
-                      <thead>
-                        <tr>
-                          <th>Tipo</th>
-                          <th>Descrizione</th>
-                          <th>Link</th>
-                        </tr>
-                      </thead>
-                      <theader>
-                        <tr>
-                          <th colspan="4">legenda P=paper H=hardware S=software</th>
-                        </tr>
-                      </theader>
-                      <tfoot>
-                        <tr>
-                          <th colspan="4">*ref link (parti da questo link per sostenermi)</th>
-                        </tr>
-                      </tfoot>
-                      <tbody>
-                        <tr>
-                          <th>P</th>
-                          <td>Bitaddress genera un paper wallet</td>
-                          <td><a href="https://www.bitaddress.org/bitaddress.org-v3.3.0-SHA256-dec17c07685e1870960903d8f58090475b25af946fe95a734f88408cef4aa194.html">Link</a>
-                         </td>
-                        </tr>
-                        <tr>
-                          <th>P</th>
-                          <td>Paper wallet.com fork di bitaddresss</td>
-                          <td><a href="https://paperwallet.bitcoin.com/">Link</a>
-                         </td>
-                        </tr>
-                        <tr>
-                          <th>H</th>
-                          <td>BitBox*</td>
-                          <td><a href="https://shiftcrypto.ch/bitbox02/?ref=REHlrSoi0w">Acquista</a></td>
-                        </tr>
-                        <tr>
-                          <th>H</th>
-                          <td>Ledger*</td>
-                          <td><a href="https://shop.ledger.com/?r=bf59721c5313">Acquista</a></td>
-                        </tr>
-                        <tr>
-                          <th>H</th>
-                          <td>Trezor</td>
-                          <td><a href="https://shop.trezor.io/">Acquista</a></td>
-                        </tr>
-                        <tr>
-                          <th>HS</th>
-                          <td>Specter (hardware assemblabile)</td>
-                          <td><a href="https://specter.solutions/">Scarica</a></td>
-                        </tr>
-                        <tr>
-                          <th>S</th>
-                          <td>Electrum</td>
-                          <td><a href="https://electrum.org/#download">Scarica</a></td>
-                        </tr>
-                        <tr>
-                          <th>S</th>
-                          <td>Bitcoin core</td>
-                          <td><a href="https://bitcoin.org/it/scarica">Scarica</a></td>
-                        </tr>
-                        <tr>
-                          <th>S</th>
-                          <td>Wasabi</td>
-                          <td><a href="https://wasabiwallet.io/#download">Scarica</a></td>
-                        </tr>
-                       </tbody>
-                    </table>
-                    <hr />
-              </div>
-        </section>
-        </div>
-
-        <section id="acquistare">
-          <header><h1 class="terminal-prompt" style="color: chartreuse;">acquistare btc</h1></header>
-          <div class="container">
-            <table>
-              <div class="terminal-card">
-                <header> Potete utilizzare uno di questi servizi per acquistare bitcoin, qualcuno può richiedere la verifica d'identità (KYC).</header>
-              </div>
-              <thead>
-                <tr>
-                  <th>Servzio</th>
-                  <th>Descrizione</th>
-                  <th>KYC</th>
-                  <th>Link</th>
-                                   
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th>Bisq</th>
-                  <td>Acquista in modo privato peer-to-peer</td>
-                  <td>NO</td>
-                  <td><a href="https://bisq.network/">Link</a>
-                 </td>
-                </tr>
-                <tr>
-                  <th>Bitkipi</th>
-                  <td>Acquista con bonifico anche ricorrente</td>
-                  <td>NO</td>
-                  <td><a href="https://bitkipi.com/">Link</a>
-                 </td>
-                </tr>
-                <tr>
-                  <th>BlockDX</th>
-                  <td>Scambio dex che utilizza atomic swap</td>
-                  <td>NO</td>
-                  <td><a href="https://blockdx.net/">Link</a>
-                 </td>
-                </tr>
-                <tr>
-                  <th>RoboSats</th>
-                  <td>Semplice e privato per scambiare bitcoin con valute nazionali, rete TOR.</td>
-                  <td></td>
-                  <td><a href="http://robosats6tkf3eva7x2voqso3a5wcorsnw34jveyxfqi2fu7oyheasid.onion/">Link</a>
-                 </td>
-                </tr>
-                <tr>
-                  <th>Majestic Bank</th>
-                  <td>Scambia Bitcoin con Monero e viceversa.</td>
-                  <td>NO</td>
-                  <td><a href="https://majesticbank.ru/">Link</a>
-                 </td>
-                </tr>
-                <tr>
-                  <th>Kilos Swap</th>
-                  <td>Questo servizio di scambio di monete è disponibile solo con Tor e garantisce la piena anonimità agli utenti.</td>
-                  <td>NO</td>
-                  <td><a href="http://mlyusr6htlxsyc7t2f4z53wdxh3win7q3qpxcrbam6jf3dmua7tnzuyd.onion/coinswap">Link</a>
-                 </td>
-                </tr>
-                <tr>
-                  <th>Local Bitcoin</th>
-                  <td>Scambia bitcoin da persona a persona in modo semplice, veloce, e sicuro.</td>
-                  <td>SI</td>
-                  <td><a href="https://localbitcoins.com/it/">Link</a>
-                 </td>
-                </tr>
-                <tr>
-                  <th>Boltz</th>
-                  <td>Scambio crittografico senza account, costruito su lightning network</td>
-                  <td>NO</td>
-                  <td><a href="https://boltz.exchange/">Link</a>
-                 </td>
-                </tr>
-                <tr>
-                  <th>Coin Swap</th>
-                  <td>Pagina di swap semplice e leggera in cui è possibile scambiare varie criptovalute.</td>
-                  <td>NO</td>
-                  <td><a href="https://coinswap.click/">Link</a>
-                 </td>
-                </tr>
-             </tbody>
-            </table>
 </div>
-        </section>
-
-        <div class="container"><hr />
-        <footer>
-<p>
-  Questo progetto è ispirato dal lavoro di 
-  <a href="https://github.com/mirserena/risorsebitcoin/blob/main/README.md" target="_blank" rel="noopener noreferer"
-    >MIR Serena</a
-  >
-  e 
-  <a href="https://medium.com/@pindol/premessa-1e5254a52475" rel="noopener noreferer">Pindol</a>
-</p>
-</footer>
-
-        <hr />
-        <section>
-<header></header>
-<p style="color: #fc6602;">Version: 0.7.2 <a href="#menu">Top</a></p>
-</section>
-</div>
-    </main>
 
 
+
+
+
+<script src='particles.min.js'></script>
+<script src="app.js"></script>
+<script type="text/javascript" src="https://nibirumail.com/docs/scripts/nibirumail.cookie.min.js"></script>
 </body>
 </html>

@@ -28,6 +28,7 @@
   <meta property="og:description" content="Una raccolta opensource di varie fonti su Bitcoin in uno stile minimale e leggero.">
   <meta property="og:image" content="image.png">
 
+  <!-- custom css file link  -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.2/dist/terminal.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
@@ -81,23 +82,23 @@
         --mono-font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
           DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
           serif;
-        --background-color: #eeecd6;
+        --background-color: #000000;
         --page-width: 60em;
-        --font-color: #4b4b4b;
-        --invert-font-color: #adacac;
-        --secondary-color: #292929;
-        --tertiary-color: #2b2c2c;
-        --primary-color: #000000;
+        --font-color: #d3d4da;
+        --invert-font-color: #222225;
+        --secondary-color: #a3abba;
+        --tertiary-color: #a3abba;
+        --primary-color: #15ff00;
         --error-color: #ff3c74;
         --progress-bar-background: #3f3f44;
         --progress-bar-fill: #62c4ff;
-        --code-bg-color: #9b9b9b;
+        --code-bg-color: #3f3f44;
         --input-style: solid;
         --display-h1-decoration: none;
       }
     
   </style>
-  
+
 
 </head>
 
@@ -116,54 +117,55 @@
 		});
 	});
 </script>
+
 <body class="terminal">
         <div class="terminal-nav">
         <div class="terminal-logo">
             <div class="logo terminal-prompt">
-                <a href="https://mendace.github.io/Bitcoin/paper.html" class="no-style"><h1 class="rainbow rainbow-text" style="font-size: x-large; color: #fc6602;"> ₿</h1></a>
+                <a href="main.html" class="no-style"><h1 class="rainbow rainbow-text" style="font-size: x-large; color: #fc6602;"> ₿</h1></a>
             </div>
         </div> 
         <nav class="terminal-menu" id="menu">
             <ul>
-                <li style="color: rgb(255, 136, 0);">
+                <li style="color: chartreuse;">
                     <a href="#io" class="menu-item">io.</a>
                 </li> 
-                <li style="color: rgb(255, 136, 0);">
+                <li style="color: chartreuse;">
                     <a href="#risorse" class="menu-item">Bitcoin.</a>
                 </li> 
-                <li style="color: rgb(255, 136, 0);">
+                <li style="color: chartreuse;">
                     <a href="#lightning" class="menu-item">lightning.</a>
                 </li> 
-                <li style="color: rgb(255, 136, 0);">
+                <li style="color: chartreuse;">
                     <a href="#taproot" class="menu-item">taproot.</a>
                 </li> 
-                <li style="color: rgb(255, 136, 0);">
+                <li style="color: chartreuse;">
                     <a href="#wallet" class="menu-item">wallet.</a>
                 </li> 
-                <li style="color: rgb(255, 136, 0);">
+                <li style="color: chartreuse;">
                     <a href="#acquistare" class="menu-item">acquistare BTC.</a>
                 </li>
-                <li style="color: rgb(255, 136, 0);">
+                <li style="color: chartreuse;">
                     <a href="#extra" class="menu-item">extra.</a>
                 </li>
             </ul>
         </nav>
-    </div>
+    </div> 
     
     <section>
-      <div class="banner-container-light">
+      <div class="banner-container">
 
-        <div class="bannerlight">
-            <div class="objectlg">
+        <div class="banner">
+            <div class="object">
                 <img src="assets/bitbox.png" alt="">
             </div>
-            <div class="contentlg">
+            <div class="content">
                 <span>Bitcoin Only edition</span>
                 <h3>Bitbox 02</h3>
                 <p>The best secure hardware wallet</p>
                 <a href="https://shiftcrypto.ch/bitbox02/?ref=REHlrSoi0w" class="btn">more</a>
             </div>
-            <div class="womenlg">
+            <div class="women">
                 <img src="" alt="">
             </div>
         </div>
@@ -172,10 +174,11 @@
     
     </section>
     
+    
     <main>
         <section id="io">
             <div class="container"><hr /></div>
-            <header><h1 class="terminal-prompt" style="color: rgb(8, 8, 8);">perchè questa raccolta?</h1></header>
+            <header><h1 class="terminal-prompt" style="color: chartreuse;">perchè questa raccolta?</h1></header>
             <div class="container">
                 <p>Era necessaria una nuova raccolta che raccogliesse più informazioni possibili su Bitcoin? Probabilmente no, ma era da molto tempo che volevo farlo e finalmente sono riuscito a trovare il tempo. Quindi questa sarà la MIA raccolta personale che condividerò con tutti e chiunque potrà contribuire a renderla migliore.</p>
             </br>
@@ -189,14 +192,16 @@
                     </p>
                     <br>
                     <h2 id="project-goals">Stile</h2>
-                    <p>Puoi provare questa repository anche nella versione old terminal.</p>
+                    <p>Puoi provare questa repository anche nella versione terminal paper.</p>
                     <div style="display: flex;
                     flex-direction: row;
                     justify-content: center;
                     align-items: center;">
                     <button class="btn btn-default" style="display: flex;
                     justify-content: center;
-                    align-items: center;"><a href="main.html">Old</a></button></div><br /><br />
+                    align-items: center;"><a href="paper.html">Paper</a></button></div>
+                    
+                    <br /><br />
                     <section>
                       <header><h2 id="Cards"></h2></header>
                       <div class="terminal-card">
@@ -215,24 +220,25 @@
                     <br />
                       </div>
                       <br />
+                      
                     </section>
             </div>
         </section>
         <div class="container"><hr /></div>
         <section>
-            <header><h1 class="terminal-prompt" style="color: rgb(0, 0, 0);">risorse</h1></header>
+            <header><h1 class="terminal-prompt" style="color: chartreuse;">risorse</h1></header>
             <div class="container">
             </dl>
             <p><strong>Ecco alcune risorse in italiano</strong> che potete leggere, ascoltare o guardare.</p>
             <p class="terminal-prompt" id="risorse">Piccoli passi con <em>Bitcoin.</em></p>
             <ol class="terminal-toc">
-              <li><a href="https://mendace.github.io/Bitcoin/bitcoin-light.html#introduzione">Introduzione a Bitcoin.</a></li>
-              <li><a href="https://mendace.github.io/Bitcoin/bitcoin-light.html#uso">Perchè usare Bitcoin.</a></li>
-               <li><a href="https://mendace.github.io/Bitcoin/bitcoin-light.html#satoshi">Satoshi Nakamoto.</a></li>
-               <li><a href="https://mendace.github.io/Bitcoin/bitcoin-light.html#blockchain">Blockchain.</a></li>
-              <li><a href="https://mendace.github.io/Bitcoin/bitcoin-light.html#wallet">Cos'è un wallet.</a></li>
-              <li><a href="https://mendace.github.io/Bitcoin/bitcoin-light.html#nodi">Nodo Bitcoin.</a></li>
-              <li><a href="https://mendace.github.io/Bitcoin/bitcoin-light.html#transazioni">Transazioni.</a></li>
+              <li><a href="https://mendace.github.io/Bitcoin/bitcoin.html#introduzione">Introduzione a Bitcoin.</a></li>
+              <li><a href="https://mendace.github.io/Bitcoin/bitcoin.html#uso">Perchè usare Bitcoin.</a></li>
+               <li><a href="https://mendace.github.io/Bitcoin/bitcoin.html#satoshi">Satoshi Nakamoto.</a></li>
+               <li><a href="https://mendace.github.io/Bitcoin/bitcoin.html#blockchain">Blockchain.</a></li>
+              <li><a href="https://mendace.github.io/Bitcoin/bitcoin.html#wallet">Cos'è un wallet.</a></li>
+              <li><a href="https://mendace.github.io/Bitcoin/bitcoin.html#nodi">Nodo Bitcoin.</a></li>
+              <li><a href="https://mendace.github.io/Bitcoin/bitcoin.html#transazioni">Transazioni.</a></li>
               <li><a href="#">CoinJoin.</a></li>
             </ol>
           </dl>
@@ -256,7 +262,7 @@
           <br />
           <hr />
             </div>
-          <header><h1 class="terminal-prompt" style="color: rgb(0, 0, 0);" id="wallet">wallet</h1></header>
+          <header><h1 class="terminal-prompt" style="color: chartreuse;" id="wallet">wallet</h1></header>
           <div class="container">
                     <table>
                       <div class="terminal-card">
@@ -335,7 +341,7 @@
         </div>
 
         <section id="acquistare">
-          <header><h1 class="terminal-prompt" style="color: rgb(0, 0, 0);">acquistare btc</h1></header>
+          <header><h1 class="terminal-prompt" style="color: chartreuse;">acquistare btc</h1></header>
           <div class="container">
             <table>
               <div class="terminal-card">
